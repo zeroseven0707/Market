@@ -21,7 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[RafliController::class, 'index']);
 Route::get('/login',[RafliController::class, 'login']);
 Route::get('/signup',[RafliController::class, 'signup']);
-Route::get('/produk',[RafliController::class, 'produk']);
 Route::get('/tentang',[RafliController::class, 'tentang']);
 
 
