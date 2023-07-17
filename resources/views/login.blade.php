@@ -1,20 +1,27 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            <form action="{{ route('auth') }}" method="post">@csrf
-             email : <input type="email" name="posEmail" id=""> <br>
-             password : <input type="password" name="posPassword" id=""> <br>
-             pin : <input type="password" name="posPin" id=""> <br>
-             <button type="submit">Login</button>
+@extends('template.index')
+@section('content')
+<div class="login">
+    <div class="login-box">
+        <div class="heading-login">
+            <h2>Masuk</h2>
+        </div>
+        <div class="login-box-layout">
+            <form action="">
+                <div class="form-box">
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="Email Kamu">
+                </div>
+                <div class="form-box">
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Password Kamu">
+                </div>
+                <button>Masuk</button>
             </form>
         </div>
-    </body>
-</html>
+        <div class="button-login-bottom">
+            <span class="lupa-sandi">Lupa kata sandi? <a href="">Reset kata sandi</a></span>
+            <span class="lupa-sandi">Tidak punya akun? <a href="sign-up.php">Buat Akun</a></span>
+        </div>
+    </div>
+</div>
+@endsection
