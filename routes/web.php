@@ -22,6 +22,7 @@ Route::get('/',[RafliController::class, 'index']);
 Route::get('/login',[RafliController::class, 'login']);
 Route::get('/signup',[RafliController::class, 'signup']);
 Route::get('/produk',[RafliController::class, 'produk']);
+Route::get('/cart',[RafliController::class, 'cart']);
 Route::get('/tentang',[RafliController::class, 'tentang']);
 
 

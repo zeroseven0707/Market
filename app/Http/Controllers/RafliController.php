@@ -21,4 +21,7 @@ class RafliController extends Controller
     public function produk(){
         return view('produk');
     }
+    public function cart(){
+        return view('produk');
+    }
 }
