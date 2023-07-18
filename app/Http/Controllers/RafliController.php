@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Merchant;
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
 
 class RafliController extends Controller
 {
-    public function index(){
-        return view('index');
-    }
+
     public function login(){
         return view('login');
     }

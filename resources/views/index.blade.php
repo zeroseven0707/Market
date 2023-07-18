@@ -9,66 +9,18 @@
     </div>
     <div class="swiper categorySlide swiper__categoryProduct">
         <div class="swiper-wrapper">
+            @foreach ($category['data'] as $cat)
             <div class="swiper-slide">
                 <div class="box-category">
                     <div class="image-box-category">
                         <img src="images/bahan-pokok.png" alt="">
                     </div>
                     <div class="content-box-category">
-                        <h4>Bahan Pokok</h4>
+                        <h4>{{ $cat['namaKategoriBarang'] }}</h4>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box-category">
-                    <div class="image-box-category">
-                        <img src="images/makanan-ringan.png" alt="">
-                    </div>
-                    <div class="content-box-category">
-                        <h4>Makanan Ringan</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category">
-                    <div class="image-box-category">
-                        <img src="images/bumbu-masakan.png" alt="">
-                    </div>
-                    <div class="content-box-category">
-                        <h4>Bumbu Masakan</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category">
-                    <div class="image-box-category">
-                        <img src="images/minuman.png" alt="">
-                    </div>
-                    <div class="content-box-category">
-                        <h4>Minuman</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category">
-                    <div class="image-box-category">
-                        <img src="images/bahan-pokok.png" alt="">
-                    </div>
-                    <div class="content-box-category">
-                        <h4>Makanan Instan</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category">
-                    <div class="image-box-category">
-                        <img src="images/bahan-pokok.png" alt="">
-                    </div>
-                    <div class="content-box-category">
-                        <h4>Susu & Produk Olahan</h4>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -81,72 +33,19 @@
     </div>
     <div class="swiper jagaKesehatan swiper__product">
         <div class="swiper-wrapper">
+         @foreach ($product['data'] as $item)
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
                     <div class="content-box-category content-box-category__product">
-                        <h4>Nexcare Daily Mask</h4>
-                        <span>Rp. 5600 ,-</span>
+                        <h4>{{ $item['namaVarian'] }}</h4>
+                        <span>{{ $item['hargaJual'] }}</span>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box-category box-category__product">
-                    <div class="image-box-category image-box-category__product">
-                        <img src="images/masker.png" alt="">
-                    </div>
-                    <div class="content-box-category content-box-category__product">
-                        <h4>Nexcare Daily Mask</h4>
-                        <span>Rp. 5600 ,-</span>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category box-category__product">
-                    <div class="image-box-category image-box-category__product">
-                        <img src="images/masker.png" alt="">
-                    </div>
-                    <div class="content-box-category content-box-category__product">
-                        <h4>Nexcare Daily Mask</h4>
-                        <span>Rp. 5600 ,-</span>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category box-category__product">
-                    <div class="image-box-category image-box-category__product">
-                        <img src="images/masker.png" alt="">
-                    </div>
-                    <div class="content-box-category content-box-category__product">
-                        <h4>Nexcare Daily Mask</h4>
-                        <span>Rp. 5600 ,-</span>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category box-category__product">
-                    <div class="image-box-category image-box-category__product">
-                        <img src="images/masker.png" alt="">
-                    </div>
-                    <div class="content-box-category content-box-category__product">
-                        <h4>Nexcare Daily Mask</h4>
-                        <span>Rp. 5600 ,-</span>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="box-category box-category__product">
-                    <div class="image-box-category image-box-category__product">
-                        <img src="images/masker.png" alt="">
-                    </div>
-                    <div class="content-box-category content-box-category__product">
-                        <h4>Nexcare Daily Mask</h4>
-                        <span>Rp. 5600 ,-</span>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
