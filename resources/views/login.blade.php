@@ -20,7 +20,7 @@
         </div>
         <div class="button-login-bottom">
             <span class="lupa-sandi">Lupa kata sandi? <a href="">Reset kata sandi</a></span>
-            <span class="lupa-sandi">Tidak punya akun? <a href="sign-up.php">Buat Akun</a></span>
+            <span class="lupa-sandi">Tidak punya akun? <a href="/signup">Buat Akun</a></span>
         </div>
     </div>
 </div>

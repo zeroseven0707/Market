@@ -23,6 +23,11 @@ Route::get('/signup',[RafliController::class, 'signup']);
 Route::get('/produk',[RafliController::class, 'produk']);
 Route::get('/cart',[RafliController::class, 'cart']);
 Route::get('/tentang',[RafliController::class, 'tentang']);
+Route::get('/informasi',[RafliController::class, 'informasi']);
+Route::get('/katalog',[RafliController::class, 'katalog']);
+Route::get('/wishlist',[RafliController::class, 'wishlist']);
+Route::get('/shipping',[RafliController::class, 'shipping']);
+Route::get('/konfirmasi',[RafliController::class, 'konfirmasi']);
 
 
 
