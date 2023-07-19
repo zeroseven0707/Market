@@ -13,10 +13,10 @@
             <div class="menu-top width">
                 <div class="menu-top-box">
                     <ul>
-                        <a href="#"><li>Tentang Kami</li></a>
+                        <a href="/tentang-kami"><li>Tentang Kami</li></a>
                         <a href="#"><li>Temukan Kami</li></a>
                         <a href="#"><li>Pembayaran</li></a>
-                        <a href="#"><li>Gabung Kemitraan</li></a>
+                        <a href="/gabung-kemitraan"><li>Gabung Kemitraan</li></a>
                     </ul>
                     <button class="hamburger-menu" onclick="toggleMenu()">Tentang Kami <iconify-icon icon="tabler:chevron-down"></iconify-icon></button>
                 </div>
@@ -47,11 +47,11 @@
             <div class="popup-menu-overlay" onclick="toggleMenu()">
                 <div class="popup-menu-box">
                     <ul>
-                        <a href="tentang-kami.php"><li>Tentang Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
+                        <a href="/tentang-kami"><li>Tentang Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
                         <a href="#"><li>Temukan Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
                         <a href="#"><li>Pembayaran <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
                         <a href="#"><li>Hubungi Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
-                        <a href="#"><li style="border-bottom:none;">Gabung Kemitraan <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
+                        <a href="/gabung-kemitraan"><li style="border-bottom:none;">Gabung Kemitraan <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
                     </ul>
                 </div>
             </div>
@@ -101,8 +101,8 @@
             <div class="footer-menu footer-menu__center">
                 <h3>Perusahaan</h3>
                 <ul>
-                    <a href=""><li>Tentang Kami</li></a>
-                    <a href=""><li>Gabung Kemitraan</li></a>
+                    <a href="/tentang-kami"><li>Tentang Kami</li></a>
+                    <a href="/gabung-kemitraan"><li>Gabung Kemitraan</li></a>
                     <a href=""><li>Temukan Kami</li></a>
                     <a href=""><li>Cara Pembayaran</li></a>
                 </ul>

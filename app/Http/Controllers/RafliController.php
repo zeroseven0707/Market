@@ -39,4 +39,7 @@ class RafliController extends Controller
     public function konfirmasi(){
         return view('konfirmasi');
     }
+    public function kemitraan(){
+        return view('gabung-mitra');
+    }
 }
