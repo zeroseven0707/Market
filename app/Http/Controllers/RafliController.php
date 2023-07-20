@@ -42,4 +42,22 @@ class RafliController extends Controller
     public function kemitraan(){
         return view('gabung-mitra');
     }
+    public function pembayaran(){
+        return view('cara-pembayaran');
+    }
+    public function temukanKami(){
+        return view('temukan-kami');
+    }
+    public function faq(){
+        return view('faq');
+    }
+    public function kebijakanPrivasi(){
+        return view('kebijakan-privasi');
+    }
+    public function syaratKetentuan(){
+        return view('syarat-ketentuan');
+    }
+    public function caraBeli(){
+        return view('cara-beli');
+    }
 }

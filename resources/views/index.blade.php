@@ -60,6 +60,12 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -71,6 +77,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -82,6 +94,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -93,6 +111,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -104,6 +128,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -115,6 +145,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -138,6 +174,12 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -149,6 +191,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -160,6 +208,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -171,6 +225,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -182,6 +242,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -193,6 +259,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -216,12 +288,17 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="diskon">
                         <span>-10%</span>
                     </div>
                     <div class="image-box-category image-box-category__product">
                         <img src="images/masker.png" alt="">
-
                     </div>
                     <div class="content-box-category content-box-category__product">
                         <h4>Nexcare Daily Mask</h4>
@@ -231,6 +308,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="diskon">
                         <span>-30%</span>
                     </div>
@@ -245,6 +328,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="diskon">
                         <span>-5%</span>
                     </div>
@@ -259,6 +348,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="diskon">
                         <span>-15%</span>
                     </div>
@@ -273,6 +368,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="diskon">
                         <span>-5%</span>
                     </div>
@@ -287,6 +388,12 @@
             </div>
             <div class="swiper-slide">
                 <div class="box-category box-category__product">
+                    <div class="button-product__select">
+                        <div class="button-product__select-icon">
+                            <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                            <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                        </div>
+                    </div>
                     <div class="diskon">
                         <span>-25%</span>
                     </div>

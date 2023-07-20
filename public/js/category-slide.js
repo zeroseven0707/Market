@@ -47,3 +47,22 @@ var diskonSlide = new Swiper(".diskonSlide", {
         prevEl: ".swiper-button-prev",
       },
 });
+
+var temukanKami = new Swiper(".temukanKami", {
+  slidesPerView: 3,
+  spaceBetween:40,
+  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var caraBeli = new Swiper(".caraBeli", {
+  spaceBetween: 50,
+  autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

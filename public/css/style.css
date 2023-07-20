@@ -245,6 +245,7 @@ body{
     height: 270px;
     margin: auto;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 .image-box-category img{
     max-width: 100%;
@@ -255,6 +256,48 @@ body{
     transform: translate(-50%, -50%);
     object-fit: contain;
     object-position: center;
+    filter: drop-shadow(0px 3px 9px #27272727);
+    transition: .3s all;
+}
+.button-product__select{
+    position: absolute;
+    right: 4.5%;
+    top: 40%;
+    transition: .3s all;
+    transform: scale(0);
+    width: 38px;
+    height: 70px;
+    background: #1a8d82;
+    padding: 13px;
+    opacity: 0;
+    border-radius: 1px;
+    z-index: 5;
+}
+.box-category:hover .button-product__select{
+    transform: scale(1);
+    opacity: 1;
+}
+.button-product__select-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-product__select-icon iconify-icon{
+    color: white;
+    font-size: 18px;
+    transition: .3s all;
+}
+.button-product__select-icon iconify-icon:hover{
+    transform: scale(1.1);
+}
+.box-category:hover .image-box-category img{
+    transform:  translate(-50%, -50%) scale(1.1);
 }
 .content-box-category{
     background: white;
@@ -350,13 +393,18 @@ body{
     box-shadow: 8px 8px 0px 0px #22A699;
 }
 .content-box-category__product h4{
-    font-size: 17px;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 .content-box-category__product span{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
+}
+.content-box-category__product p{
+    font-size: 11px;
+    color: #1e1e1e79;
+    text-decoration: line-through;
 }
 .diskon{
     position: absolute;
@@ -417,10 +465,10 @@ body{
 }
 .layout-footer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 .footer-content-logo{
-    padding-right: 60px;
+    padding-right: 40px;
 }
 .footer-content-logo img{
     max-width: 70%;
@@ -507,7 +555,10 @@ body{
     cursor: pointer;
 }
 .footer-menu__center{
-    margin-left: 35px;
+    margin-left: 25px;
+}
+.footer-menu__center-1{
+    margin-left: 65px;
 }
 .copyright{
     text-align: center;
@@ -1061,11 +1112,21 @@ body{
 }
 .cart-product-image{
     width: 100%;
+    height: 90px;
+    position: relative;
 }
 .cart-product-image img{
-    max-width: 90%;
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: contain;
+    object-position: center;
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     margin: auto;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 3px 9px #27272727);
 }
 .cart-product-name{
     display: flex;
@@ -1208,10 +1269,13 @@ body{
 }
 .sidebar-informasi-overflow{
     width: 100%;
-    height: 230px;
+    height: 114px;
     overflow-y: scroll;
     position: relative;
-    scroll-behavior: smooth;
+    transition: .4s all;
+}
+.sidebar-informasi-layout:hover .sidebar-informasi-overflow{
+    height: max-content;
 }
 .sidebar-informasi-overflow::-webkit-scrollbar{
     display: none;
@@ -1233,7 +1297,8 @@ body{
 }
 .sidebar-informasi__image img{
     position: absolute;
-    max-width: 90%;
+    max-width: 100%;
+    max-height: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1739,3 +1804,183 @@ body{
     font-size: 15px;
     color: #1E1E1E;
 }
+
+
+.cara-pembayaran__layout {
+    padding: 60px 0;
+}
+
+.temukan-kami-layout{
+    padding: 60px 0;
+    padding-top: 70px;
+}
+.temukanKami{
+    padding: 0 20px !important;
+}
+.temukan-kami__box{
+    box-shadow: 6px 6px 0px 0px #22A699, 1px 5px 24px 0px rgba(0, 0, 0, 0.137);
+    transition: .4s all;
+    margin:20px 10px;
+    padding: 35px;
+}
+.temukan-kami__box:hover{
+    box-shadow: 8px 8px 0px 0px #22A699, 1px 5px 24px 0px rgba(0, 0, 0, 0.137);
+}
+.temukan-kami__box-icon{
+    margin-bottom: 7px;
+}
+.temukan-kami__box-icon iconify-icon{
+    font-size: 50px;
+    color: #1a8d82;
+}
+.temuka-kami__box-content h3{
+    font-size: 25px;
+    color: #1E1E1E;
+    margin-bottom: 2px;
+}
+.temuka-kami__box-content p{
+    font-size: 17px;
+    color: #1E1E1E;
+}
+
+.maps{
+    margin-bottom: 30px;
+}
+.maps iframe{
+    width: 100%;
+    box-shadow: 6px 6px 0px 0px #22A699, 1px 5px 24px 0px rgba(0, 0, 0, 0.137);
+    height: 350px;
+}
+
+.faq-layout{
+    padding: 65px 0;
+    width: 900px;
+}
+.faq-accordion {
+    background-color: #ffffff;
+    color: #1E1E1E;
+    box-shadow: 5px 5px 0px 0px #22A699, 1px 5px 20px 0px rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: 0.4s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .faq-accordion:hover{
+    box-shadow: 7px 7px 0px 0px #22A699, 1px 5px 20px 0px rgba(0, 0, 0, 0.075);
+  }
+  
+  .faq-active{
+    background-color: #ffffff;
+  }
+  
+  .faq-accordion:after {
+    content: url('https://api.iconify.design/tabler/chevron-down.svg?color=%231a8d82&width=27&height=27');
+    margin-bottom: -9px;
+    color: #1a8d82;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: .3s all;
+    font-size: 18px;
+  }
+  
+  .faq-active:after {
+    content: url('https://api.iconify.design/tabler/chevron-down.svg?color=%231a8d82&width=27&height=27');
+    margin-bottom: -9px;
+    transform: rotate(180deg);
+  }
+  
+  .faq-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .faq-panel p{
+    padding: 20px 0;
+    padding-top: 5px;
+    font-size: 17px;
+    color: #1E1E1E;
+  }
+
+  .kebijakan-layout{
+    width: 800px;
+    margin: 70px auto;
+    background: white;
+    box-shadow: 7px 7px 0px 0px #22A699, 1px 5px 24px 0px rgba(0, 0, 0, 0.205);
+    padding: 35px;
+    color: #0e635a;
+  }
+  .kebijakan-layout__content p{
+    font-size: 17px;
+    color: #0e635a;
+  }
+  .kebijakan-layout__content-list{
+    margin-top: 25px;
+  }
+  .kebijakan-layout__content-list-box{
+    margin-bottom: 30px;
+  }
+  .kebijakan-layout__content-list-box h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0e635a;
+  }
+  .kebijakan-layout__content-list-box ul{
+    margin-left: 20px;
+    list-style-type: decimal;
+  }
+  .kebijakan-layout__content-list-box ul li{
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  .kebijakan-layout__content-list-box p{
+    font-size: 17px;
+    margin-left: 4px;
+  }
+
+
+  .caraBeli{
+    width: 800px !important;
+    padding: 60px 23px !important;
+  }
+  .cara-beli__box{
+    width: 100%;
+    border: 1px solid #1a8d82;
+  }
+  .cara-beli__image{
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .cara-beli__image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cara-beli__content{
+    padding: 33px;
+  }
+  .cara-beli__content h3{
+    font-size: 21px;
+    margin-bottom: 6px;
+    color: #0e635a;
+  }
+  .cara-beli__content p{
+    font-size: 17px;
+    color: #5e5e5e;
+  }

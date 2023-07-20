@@ -14,8 +14,8 @@
                 <div class="menu-top-box">
                     <ul>
                         <a href="/tentang-kami"><li>Tentang Kami</li></a>
-                        <a href="#"><li>Temukan Kami</li></a>
-                        <a href="#"><li>Pembayaran</li></a>
+                        <a href="/temukan-kami"><li>Temukan Kami</li></a>
+                        <a href="/cara-pembayaran"><li>Pembayaran</li></a>
                         <a href="/gabung-kemitraan"><li>Gabung Kemitraan</li></a>
                     </ul>
                     <button class="hamburger-menu" onclick="toggleMenu()">Tentang Kami <iconify-icon icon="tabler:chevron-down"></iconify-icon></button>
@@ -48,8 +48,8 @@
                 <div class="popup-menu-box">
                     <ul>
                         <a href="/tentang-kami"><li>Tentang Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
-                        <a href="#"><li>Temukan Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
-                        <a href="#"><li>Pembayaran <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
+                        <a href="/temukan-kami"><li>Temukan Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
+                        <a href="/cara-pembayaran"><li>Pembayaran <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
                         <a href="#"><li>Hubungi Kami <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
                         <a href="/gabung-kemitraan"><li style="border-bottom:none;">Gabung Kemitraan <iconify-icon icon="octicon:chevron-right-16"></iconify-icon></li></a>
                     </ul>
@@ -59,7 +59,9 @@
 
         <div class="primary-menu width">
             <div class="logo">
-                <img src="images/logo.png" alt="Logo Minimarket">
+                <a href="/">
+                    <img src="images/logo.png" alt="Logo Minimarket">
+                </a>
             </div>
             <div class="nav-menu">
                 <div id="hiddenPrimaryMenu">
@@ -98,13 +100,22 @@
                 </div>
                 <span>perusahaan2808@gmail.com</span>
             </div>
-            <div class="footer-menu footer-menu__center">
+            <div class="footer-menu footer-menu__center footer-menu__center-1">
                 <h3>Perusahaan</h3>
                 <ul>
                     <a href="/tentang-kami"><li>Tentang Kami</li></a>
                     <a href="/gabung-kemitraan"><li>Gabung Kemitraan</li></a>
-                    <a href=""><li>Temukan Kami</li></a>
-                    <a href=""><li>Cara Pembayaran</li></a>
+                    <a href="/temukan-kami"><li>Temukan Kami</li></a>
+                    <a href="/cara-pembayaran"><li>Cara Pembayaran</li></a>
+                </ul>
+            </div>
+            <div class="footer-menu footer-menu__center">
+                <h3>Bantuan</h3>
+                <ul>
+                    <a href="/faq"><li>Faq</li></a>
+                    <a href="/cara-beli"><li>Cara Pembelian</li></a>
+                    <a href="/kebijakan-privasi"><li>Kebijakan & Privasi</li></a>
+                    <a href="/syarat-ketentuan"><li>Syarat & Ketentuan</li></a>
                 </ul>
             </div>
             <div class="footer-menu ">
@@ -139,4 +150,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/category-slide.js"></script>
     <script src="js/hover-sidebar.js"></script>
+    <script src="js/faq.js"></script>
     </html>

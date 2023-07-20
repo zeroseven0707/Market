@@ -52,20 +52,20 @@
             
         </div>
         <div class="sidebar-informasi-layout">
-            <div class="sidebar-informasi-overflow" id="overflow">
+            <div class="sidebar-informasi-overflow">
                 <div class="sidebar-informasi-box">
                     <div class="sidebar-informasi__image">
-                        <img src="images/masker.png" alt="">
+                        <img src="images/coca-cola.png" alt="">
                     </div>
                     <div class="sidebar-informasi__desc">
-                        <h4>Nexcare daily mask 4pcs</h4>
+                        <h4>Coca Cola</h4>
                         <span>1</span>
                     </div>
                     <div class="sidebar-informasi__price">
                         <span>Rp. 13000,-</span>
                     </div>
                 </div>
-                <div class="sidebar-informasi-box">
+                {{-- <div class="sidebar-informasi-box">
                     <div class="sidebar-informasi__image">
                         <img src="images/masker.png" alt="">
                     </div>
@@ -100,13 +100,13 @@
                     <div class="sidebar-informasi__price">
                         <span>Rp. 13000,-</span>
                     </div>
-                </div>
+                </div> --}}
             </div>
             
             <div class="sidebar-informasi__total">
                 <div class="sidebar-informasi__total-box">
                     <span>Subtotal</span>
-                    <span>Rp. 28000,-</span>
+                    <span>Rp. 13000,-</span>
                 </div>
                 <div class="sidebar-informasi__total-box">
                     <span>Diskon</span>
@@ -116,7 +116,7 @@
             <div class="sidebar-informasi__total sidebar-informasi__total-main">
                 <div class="sidebar-informasi__total-box">
                     <span>Total</span>
-                    <span>Rp. 28000,-</span>
+                    <span>Rp. 13000,-</span>
                 </div>
             </div>
         </div>

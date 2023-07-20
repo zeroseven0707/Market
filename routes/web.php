@@ -29,6 +29,12 @@ Route::get('/wishlist',[RafliController::class, 'wishlist']);
 Route::get('/shipping',[RafliController::class, 'shipping']);
 Route::get('/konfirmasi',[RafliController::class, 'konfirmasi']);
 Route::get('/gabung-kemitraan',[RafliController::class, 'kemitraan']);
+Route::get('/cara-pembayaran',[RafliController::class, 'pembayaran']);
+Route::get('/faq',[RafliController::class, 'faq']);
+Route::get('/temukan-kami',[RafliController::class, 'temukanKami']);
+Route::get('/kebijakan-privasi',[RafliController::class, 'kebijakanPrivasi']);
+Route::get('/syarat-ketentuan',[RafliController::class, 'syaratKetentuan']);
+Route::get('/cara-beli',[RafliController::class, 'caraBeli']);
 
 
 

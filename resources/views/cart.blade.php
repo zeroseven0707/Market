@@ -15,11 +15,11 @@
         <div class="cart-product-box">
             <div class="cart-product-detail">
                 <div class="cart-product-image">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/coca-cola.png" alt="">
                 </div>
                 <div class="cart-product-name">
-                    <h3>Nexcare daily mask 4pcs</h3>
-                    <span>Deskripsi produk(kalau ada)</span>
+                    <h3>Coca Cola</h3>
+                    {{-- <span>Deskripsi produk(kalau ada)</span> --}}
                     <a href="#"><button>Hapus</button></a>
                 </div>
             </div>
@@ -31,60 +31,10 @@
                 </div>
             </div>
             <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
+                <span>Rp. 15.000,-</span>
             </div>
             <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
-            </div>
-        </div>
-        <div class="cart-product-box">
-            <div class="cart-product-detail">
-                <div class="cart-product-image">
-                    <img src="images/masker.png" alt="">
-                </div>
-                <div class="cart-product-name">
-                    <h3>Nexcare daily mask 4pcs</h3>
-                    <span>Deskripsi produk(kalau ada)</span>
-                    <a href="#"><button>Hapus</button></a>
-                </div>
-            </div>
-            <div class="cart-product-quantity">
-                <div class='qty-layout'>
-                    <button onclick="decreaseQty()"><iconify-icon icon="fa6-solid:minus"></iconify-icon></button>
-                    <input type="text" value="1" id="qty"/>
-                    <button onclick="increaseQty()"><iconify-icon icon="fa6-solid:plus"></iconify-icon></button>
-                </div>
-            </div>
-            <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
-            </div>
-            <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
-            </div>
-        </div>
-        <div class="cart-product-box">
-            <div class="cart-product-detail">
-                <div class="cart-product-image">
-                    <img src="images/masker.png" alt="">
-                </div>
-                <div class="cart-product-name">
-                    <h3>Nexcare daily mask 4pcs</h3>
-                    <span>Deskripsi produk(kalau ada)</span>
-                    <a href="#"><button>Hapus</button></a>
-                </div>
-            </div>
-            <div class="cart-product-quantity">
-                <div class='qty-layout'>
-                    <button onclick="decreaseQty()"><iconify-icon icon="fa6-solid:minus"></iconify-icon></button>
-                    <input type="text" value="1" id="qty"/>
-                    <button onclick="increaseQty()"><iconify-icon icon="fa6-solid:plus"></iconify-icon></button>
-                </div>
-            </div>
-            <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
-            </div>
-            <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
+                <span>Rp. 15.000,-</span>
             </div>
         </div>
     </div>
@@ -106,8 +56,8 @@
             Masukkan ke Daftar Keinginan
         </button>
         <div class="total-produk">
-            <span>Total (3 Produk):</span>
-            <h3>Rp. 57.000</h3>
+            <span>Total (1 Produk):</span>
+            <h3>Rp. 15.000,-</h3>
         </div>
         <a href="/informasi">
             <button class="checkout-button__next">
@@ -123,8 +73,16 @@
         </div>
         <div class="layout-product-main">
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <a href="/produk">
+                        <img src="images/masker.png" alt="">
+                    </a>
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
@@ -132,8 +90,14 @@
                 </div>
             </div>
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/coca-cola.png" alt="">
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
@@ -141,8 +105,14 @@
                 </div>
             </div>
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/mizone.png" alt="">
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
@@ -150,8 +120,14 @@
                 </div>
             </div>
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/youc.png" alt="">
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
@@ -159,8 +135,14 @@
                 </div>
             </div>
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/kue.png" alt="">
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
@@ -168,8 +150,14 @@
                 </div>
             </div>
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/chitato.png" alt="">
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
@@ -177,8 +165,14 @@
                 </div>
             </div>
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/adem-sari.png" alt="">
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
@@ -186,8 +180,14 @@
                 </div>
             </div>
             <div class="box-category box-category__product">
+                <div class="button-product__select">
+                    <div class="button-product__select-icon">
+                        <a href="/wishlist"><iconify-icon icon="mdi:heart"></iconify-icon></a>
+                        <a href="/cart"><iconify-icon icon="vaadin:cart"></iconify-icon></a>
+                    </div>
+                </div>
                 <div class="image-box-category image-box-category__product">
-                    <img src="images/masker.png" alt="">
+                    <img src="images/sensi.png" alt="">
                 </div>
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
