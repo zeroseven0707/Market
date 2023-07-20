@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimarket</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
@@ -66,7 +66,7 @@
             <div class="nav-menu">
                 <div id="hiddenPrimaryMenu">
                     <ul>
-                        <a href=""><li>Beranda</li></a>
+                        <a href="/"><li>Beranda</li></a>
                         <a href=""><li>Program</li></a>
                         <a href="/katalog"><li>Produk & Layanan Digital</li></a>
                         <a href=""><li class="sign-in"><iconify-icon icon="clarity:login-line"></iconify-icon> Masuk</li></a>
@@ -142,13 +142,19 @@
         </div>
     </div>
     </body>
-    <script src="js/quantity.js"></script>
-    <script src="js/popup-primary-menu.js"></script>
-    <script src="js/popup-menu.js"></script>
+    <script src="{{ asset('js/quantity.js') }}"></script>
+    <script src="{{ asset('js/popup-primary-menu.js') }}"></script>
+    <script src="{{ asset('js/popup-menu.js') }}"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="js/search.js"></script>
+    <script src="{{ asset('js/search.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<<<<<<< HEAD
     <script src="js/category-slide.js"></script>
     <script src="js/hover-sidebar.js"></script>
     <script src="js/faq.js"></script>
     </html>
+=======
+    <script src="{{ asset('js/category-slide.js') }}"></script>
+    <script src="{{ asset('js/hover-sidebar.js') }}"></script>
+    </html>
+>>>>>>> e99f4688521f086a32ed74723277de336c2eedfc

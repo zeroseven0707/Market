@@ -19,8 +19,15 @@ use Illuminate\Support\Facades\Route;
 */
 // Route Khusus A Rafli
 Route::get('/login',[RafliController::class, 'login']);
+Route::post('/addto/{id}',[RafliController::class, 'addto']);
+Route::get('/cart/{id}',[RafliController::class, 'cartwishlist']);
+Route::get('/remove-cart/{index}',[RafliController::class, 'remove_cart']);
+Route::get('/remove-allcart',[RafliController::class, 'remove_allcart']);
+Route::get('/remove-wishlist/{index}',[RafliController::class, 'remove_wishlist']);
+Route::post('/information',[RafliController::class, 'information']);
+
 Route::get('/signup',[RafliController::class, 'signup']);
-Route::get('/produk',[RafliController::class, 'produk']);
+Route::get('/produk/{id}',[RafliController::class, 'produk']);
 Route::get('/cart',[RafliController::class, 'cart']);
 Route::get('/tentang-kami',[RafliController::class, 'tentang']);
 Route::get('/informasi',[RafliController::class, 'informasi']);

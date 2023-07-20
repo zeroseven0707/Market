@@ -6,14 +6,11 @@
             <img src="images/masker.png" alt="">
         </div>
         <div class="desc-page-product">
-            <h1>Nexcare daily mask 4pcs</h1>
+            <h1>{{ $product['namaVarian']}}</h1>
             <div class="harga-page-product">
-                <span>Rp. 13000,-</span>
+                <span>Rp. {{ $product['hargaJual'] }},-</span>
             </div>
             <div class="hashtag-product">
-                <div class="hashtag-product-box">
-                    <span>Masker</span>
-                </div>
                 <div class="hashtag-product-box">
                     <span>Kesehatan</span>
                 </div>
@@ -21,18 +18,20 @@
                     <span>Stok Tersedia</span>
                 </div>
             </div>
-            <div class="qty-box">
-                <h4>Jumlah barang</h4>
-                <div class='qty-layout'>
-                    <button onclick="decreaseQty()"><iconify-icon icon="fa6-solid:minus"></iconify-icon></button>
-                    <input type="text" value="1" id="qty"/>
-                    <button onclick="increaseQty()"><iconify-icon icon="fa6-solid:plus"></iconify-icon></button>
+            <form action="/addto/{{ $product['posVarianId'] }}" method="post">@csrf
+                <div class="qty-box">
+                    <h4>Jumlah barang</h4>
+                    <div class='qty-layout'>
+                        <button type="button" onclick="decreaseQty()"><iconify-icon icon="fa6-solid:minus"></iconify-icon></button>
+                        <input type="text" name="qty" value="1" id="qty"/>
+                        <button type="button" onclick="increaseQty()"><iconify-icon icon="fa6-solid:plus"></iconify-icon></button>
                 </div>
             </div>
             <div class="button-page-product">
-                <button><iconify-icon icon="vaadin:cart"></iconify-icon> Masukkan ke Keranjang</button>
-                <button class="wishlist-product"><iconify-icon icon="mdi:heart"></iconify-icon></button>
+                <button type="submit" name="save" value="cart"><iconify-icon icon="vaadin:cart"></iconify-icon> Masukkan ke Keranjang</button>
+                <button type="submit" name="save" value="wishlist" class="wishlist-product"><iconify-icon icon="mdi:heart"></iconify-icon></button>
             </div>
+        </form>
         </div>
     </div>
     <div class="recommend-layout">
@@ -40,6 +39,7 @@
             <h1>Produk <span>Pilihan Khusus</span> untukmu</h1>
         </div>
         <div class="layout-product-main">
+            @foreach ($product_all as $all)
             <div class="box-category box-category__product">
                 <div class="button-product__select">
                     <div class="button-product__select-icon">
@@ -53,6 +53,7 @@
                     </a>
                 </div>
                 <div class="content-box-category content-box-category__product">
+<<<<<<< HEAD
                     <h4>Nexcare Daily Mask</h4>
                     <span>Rp. 5600 ,-</span>
                 </div>
@@ -220,8 +221,13 @@
                 <div class="content-box-category content-box-category__product">
                     <h4>Nexcare Daily Mask</h4>
                     <span>Rp. 5600 ,-</span>
+=======
+                    <h4>{{ $all['namaVarian'] }}</h4>
+                    <span>Rp. {{ $all['hargaJual'] }} ,-</span>
+>>>>>>> e99f4688521f086a32ed74723277de336c2eedfc
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </div>

@@ -12,31 +12,53 @@
             <h3>Harga</h3>
             <h3>Total</h3>
         </div>
+        <?php
+        $total_produk = 0;
+        $total = 0;
+        ?>
+        @foreach (session()->get('cart') as $key => $item)
         <div class="cart-product-box">
             <div class="cart-product-detail">
                 <div class="cart-product-image">
                     <img src="images/coca-cola.png" alt="">
                 </div>
                 <div class="cart-product-name">
+<<<<<<< HEAD
                     <h3>Coca Cola</h3>
                     {{-- <span>Deskripsi produk(kalau ada)</span> --}}
                     <a href="#"><button>Hapus</button></a>
+=======
+                    <h3>{{ $item['nama']}}</h3>
+                    <a href="remove-cart/{{ $key }}"><button>Hapus</button></a>
+>>>>>>> e99f4688521f086a32ed74723277de336c2eedfc
                 </div>
             </div>
             <div class="cart-product-quantity">
                 <div class='qty-layout'>
                     <button onclick="decreaseQty()"><iconify-icon icon="fa6-solid:minus"></iconify-icon></button>
-                    <input type="text" value="1" id="qty"/>
+                    <input type="text" value="{{ $item['qty'] }}" id="qty"/>
                     <button onclick="increaseQty()"><iconify-icon icon="fa6-solid:plus"></iconify-icon></button>
                 </div>
             </div>
             <div class="product-layout-price">
+<<<<<<< HEAD
                 <span>Rp. 15.000,-</span>
             </div>
             <div class="product-layout-price">
                 <span>Rp. 15.000,-</span>
+=======
+                <span>Rp. {{ $item['harga'] }},-</span>
+            </div>
+            <div class="product-layout-price">
+                <span>Rp. {{ $item['total'] }},-</span>
+>>>>>>> e99f4688521f086a32ed74723277de336c2eedfc
             </div>
         </div>
+        <?php
+        $total_produk += $item['qty'];
+        $total += $item['total'];
+        ?>
+        @endforeach
     </div>
     <a href="/katalog">
         <button class="back-buy">
@@ -47,17 +69,24 @@
 </div>
 <div class="checkout-button">
     <div class="checkout-button-layout width">
-        <button class="checkout-button__option">
-            <iconify-icon icon="fa-solid:trash"></iconify-icon>
+        <a href="/remove-allcart">
+            <button class="checkout-button__option">
+                <iconify-icon icon="fa-solid:trash"></iconify-icon>
             Hapus Semua
         </button>
+    </a>
         <button class="checkout-button__option">
             <iconify-icon icon="mdi:heart"></iconify-icon>
             Masukkan ke Daftar Keinginan
         </button>
         <div class="total-produk">
+<<<<<<< HEAD
             <span>Total (1 Produk):</span>
             <h3>Rp. 15.000,-</h3>
+=======
+            <span>Total ({{ $total_produk }} Produk):</span>
+            <h3>Rp. {{ $total }}</h3>
+>>>>>>> e99f4688521f086a32ed74723277de336c2eedfc
         </div>
         <a href="/informasi">
             <button class="checkout-button__next">
