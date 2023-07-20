@@ -12,57 +12,32 @@
             <h3>Harga</h3>
             <h3>Aksi</h3>
         </div>
+        @foreach (session()->get('wishlist') as $key => $item)
         <div class="cart-product-box">
             <div class="cart-product-detail">
                 <div class="cart-product-image">
                     <img src="images/masker.png" alt="">
                 </div>
                 <div class="cart-product-name">
-                    <h3>Nexcare daily mask 4pcs</h3>
-                    <span>Deskripsi produk(kalau ada)</span>
-                    <a href="#"><button>Hapus</button></a>
+                    <h3>{{ $item['nama'] }}</h3>
+                    <a href="remove-wishlist/{{ $key }}"><button>Hapus</button></a>
                 </div>
             </div>
             <div class="product-layout-price">
                 <span>Stok Tersedia</span>
             </div>
             <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
+                <span>Rp. {{ $item['harga'] }},-</span>
             </div>
             <div class="product-layout-price">
-                <a href="">
+                <a href="/cart/{{ $item['product_id'] }}">
                     <button class="checkout-button__next">
                         +<iconify-icon icon="vaadin:cart"></iconify-icon>
                     </button>
                 </a>
             </div>
         </div>
-        <div class="cart-product-box">
-            <div class="cart-product-detail">
-                <div class="cart-product-image">
-                    <img src="images/masker.png" alt="">
-                </div>
-                <div class="cart-product-name">
-                    <h3>Nexcare daily mask 4pcs</h3>
-                    <span>Deskripsi produk(kalau ada)</span>
-                    <a href="#"><button>Hapus</button></a>
-                </div>
-            </div>
-            <div class="product-layout-price">
-                <span>Stok Tersedia</span>
-            </div>
-            <div class="product-layout-price">
-                <span>Rp. 13.000,-</span>
-            </div>
-            <div class="product-layout-price">
-                <a href="">
-                    <button class="checkout-button__next">
-                        +<iconify-icon icon="vaadin:cart"></iconify-icon>
-                    </button>
-                </a>
-            </div>
-        </div>
-        
+        @endforeach
     </div>
     <a href="/katalog">
         <button class="back-buy">
