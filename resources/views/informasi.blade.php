@@ -6,7 +6,7 @@
     </div>
     <div class="informasi-layout">
         <div class="login-box-layout">
-            <form action="/information" method="post">
+            <form action="/shipping" method="post">
                 <div class="signup-layout">
                     <div class="form-box">
                         <label for="nama-lengkap">Nama Lengkap</label>
@@ -68,7 +68,7 @@
             @foreach (session()->get('cart') as $key => $item)
                 <div class="sidebar-informasi-box">
                     <div class="sidebar-informasi__image">
-                        <img src="images/masker.png" alt="">
+                        <img src="https://api.upos-conn.com/master/v1/{{ $item['gambar'] }}" alt="">
                     </div>
                     <div class="sidebar-informasi__desc">
                         <h4>{{ $item['nama'] }}</h4>

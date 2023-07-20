@@ -20,7 +20,7 @@
         <div class="cart-product-box">
             <div class="cart-product-detail">
                 <div class="cart-product-image">
-                    <img src="images/masker.png" alt="">
+                    <img src="https://api.upos-conn.com/master/v1/{{ $item['gambar'] }}" alt="">
                 </div>
                 <div class="cart-product-name">
                     <h3>{{ $item['nama']}}</h3>

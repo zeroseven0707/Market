@@ -7,14 +7,14 @@
     </div>
     <div class="informasi-layout informasi-layout__shipping">
         <div class="login-box-layout">
-            <form action="">
+            <form action="/konfirmasi/{{ $get_pelanggan['data']['posPelangganId'] }}" method="post">@csrf
                 <div class="form-box">
                     <label for="alamat">Pengiriman ke alamat</label>
                     <div class="form-box__shipping">
                         @foreach ($ongkos as $item)
                         @foreach ($item['costs'] as $detail)
                         <label class="shipping-radio">
-                            <input type="radio" name="radio" checked/>
+                            <input type="radio" name="cost" value="{{ $detail['service'] }}"checked/>
                             <span>
                                 <div class="heading-shipping-method">
                                     <h3>JNE - {{ $detail['service'] }} ({{ $detail['description'] }})</h3>
@@ -34,11 +34,11 @@
 
                 <div class="form-box">
                     <label for="alamat">Pengiriman ke alamat</label>
-                    <textarea placeholder="Pengiriman Alamat Kamu">{{ session()->get('costumer')['alamat_lengkap']}}</textarea>
+                    <textarea placeholder="Pengiriman Alamat Kamu">{{ $get_pelanggan['data']['alamat'] }}</textarea>
                 </div>
                 <div class="informasi-layout-button__form informasi-layout-button__form-shipping">
-                    <a href="/shipping"><button>Melanjutkan Pembayaran</button></a>
-                    <a href="/cart"><button class="back__btn">Kembali ke Informasi</button></a>
+                    <button type="submit">Melanjutkan Pembayaran</button>
+                    <a href="/informasi"><button class="back__btn">Kembali ke Informasi</button></a>
                 </div>
             </form>
 
@@ -51,7 +51,7 @@
             @foreach (session()->get('cart') as $key => $item)
                 <div class="sidebar-informasi-box">
                     <div class="sidebar-informasi__image">
-                        <img src="images/masker.png" alt="">
+                        <img src="https://api.upos-conn.com/master/v1/{{ $item['gambar'] }}" alt="">
                     </div>
                     <div class="sidebar-informasi__desc">
                         <h4>{{ $item['nama'] }}</h4>

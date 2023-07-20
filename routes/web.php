@@ -24,7 +24,8 @@ Route::get('/cart/{id}',[RafliController::class, 'cartwishlist']);
 Route::get('/remove-cart/{index}',[RafliController::class, 'remove_cart']);
 Route::get('/remove-allcart',[RafliController::class, 'remove_allcart']);
 Route::get('/remove-wishlist/{index}',[RafliController::class, 'remove_wishlist']);
-Route::post('/information',[RafliController::class, 'information']);
+Route::post('/shipping',[RafliController::class, 'shipping']);
+Route::post('/post_shipping',[RafliController::class, 'post_shipping']);
 
 Route::get('/signup',[RafliController::class, 'signup']);
 Route::get('/produk/{id}',[RafliController::class, 'produk']);
@@ -34,8 +35,9 @@ Route::get('/informasi',[RafliController::class, 'informasi']);
 Route::get('/katalog',[RafliController::class, 'katalog']);
 Route::get('/wishlist',[RafliController::class, 'wishlist']);
 Route::get('/shipping',[RafliController::class, 'shipping']);
-Route::get('/konfirmasi',[RafliController::class, 'konfirmasi']);
+Route::post('/konfirmasi/{id}',[RafliController::class, 'konfirmasi']);
 Route::get('/gabung-kemitraan',[RafliController::class, 'kemitraan']);
+
 
 
 

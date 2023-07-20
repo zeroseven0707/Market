@@ -3,7 +3,7 @@
 <div class="product width">
     <div class="product-layout">
         <div class="image-page-product">
-            <img src="images/masker.png" alt="">
+            <img src="https://api.upos-conn.com/master/v1/{{ $product['gambar'] }}" alt="">
         </div>
         <div class="desc-page-product">
             <h1>{{ $product['namaVarian']}}</h1>

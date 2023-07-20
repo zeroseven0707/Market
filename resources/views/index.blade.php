@@ -40,7 +40,7 @@
                 <a href="/produk/{{ $item['posVarianId'] }}">
                     <div class="box-category box-category__product">
                         <div class="image-box-category image-box-category__product">
-                            <img src="images/masker.png" alt="">
+                            <img src="https://api.upos-conn.com/master/v1/{{ $item['gambar'] }}" alt="">
                         </div>
                         <div class="content-box-category content-box-category__product">
                             <h4>{{ $item['namaVarian'] }}</h4>
