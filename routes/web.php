@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Route Khusus A Rafli
-Route::get('/',[RafliController::class, 'index']);
 Route::get('/login',[RafliController::class, 'login']);
 Route::get('/signup',[RafliController::class, 'signup']);
 Route::get('/produk',[RafliController::class, 'produk']);
@@ -34,7 +33,7 @@ Route::get('/tentang',[RafliController::class, 'tentang']);
 Route::get('/signin',[LoginController::class, 'view']);
 Route::post('/signin',[LoginController::class, 'post'])->name('auth');
 // Halaman Utama
-Route::get('/product',[HomeController::class, 'view']);
+Route::get('/',[HomeController::class, 'view']);
 // Detail Product
 Route::get('/product/{merchant_id}',[ProductController::class, 'view']);
 // Detail Category
